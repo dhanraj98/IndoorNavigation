@@ -1240,10 +1240,10 @@ def RegisterForm():
     gender.grid(row=3, column=1)
     age = tk.Entry(RegisterFrame, textvariable=AGE, width=15)
     age.grid(row=4, column=1)
-    btn_login = Button(RegisterFrame, text="Register", width=35, command=Register)
+    btn_login = tk.Button(RegisterFrame, text="Register", width=35, command=Register)
     btn_login.grid(row=6, columnspan=2, pady=20)
     lbl_login = tk.Label(RegisterFrame, text="Login", fg="Blue")
-    lbl_login.grid(row=0, sticky=W)
+    lbl_login.grid(row=0, sticky=tk.W)
     lbl_login.bind('<Button-1>', ToggleToLogin)
 
 def ToggleToLogin(event=None):
